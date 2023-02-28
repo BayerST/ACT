@@ -1,0 +1,2 @@
+C:\Shruti\ACT\ACT_V7_Web (2)\ACT_V7_Web\ListOfValues\obj\Debug\ListOfValues.csproj.AssemblyReference.cache
+C:\Shruti\ACT\ACT_V7_Web (2)\ACT_V7_Web\ListOfValues\obj\Debug\ListOfValues.csproj.CoreCompileInputs.cache

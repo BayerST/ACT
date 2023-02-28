@@ -1,0 +1,5 @@
+C:\Shruti\ACT\ACT_V7_Web (2)\ACT_V7_Web\Encryption\obj\Debug\Encryption.csproj.AssemblyReference.cache
+C:\Shruti\ACT\ACT_V7_Web (2)\ACT_V7_Web\Encryption\obj\Debug\Encryption.csproj.SuggestedBindingRedirects.cache
+C:\Shruti\ACT\ACT_V7_Web (2)\ACT_V7_Web\Encryption\obj\Debug\EncryptConnectionString.FrmEncryptDecrypt.resources
+C:\Shruti\ACT\ACT_V7_Web (2)\ACT_V7_Web\Encryption\obj\Debug\Encryption.csproj.GenerateResource.cache
+C:\Shruti\ACT\ACT_V7_Web (2)\ACT_V7_Web\Encryption\obj\Debug\Encryption.csproj.CoreCompileInputs.cache

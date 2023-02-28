@@ -1,0 +1,2 @@
+C:\Shruti\ACT\ACT_V7_Web (2)\ACT_V7_Web\DbAccess\obj\Debug\DbAccess.csproj.AssemblyReference.cache
+C:\Shruti\ACT\ACT_V7_Web (2)\ACT_V7_Web\DbAccess\obj\Debug\DbAccess.csproj.CoreCompileInputs.cache

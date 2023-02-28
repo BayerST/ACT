@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{615B6CCF-6FF7-45DC-A3CB-184E318B9EBF}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>DbAccess</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace />
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>DbAccess.xml</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>DbAccess.xml</DocumentationFile>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common">
+      <Name>Common</Name>
+      <HintPath>..\Assemblies\Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.OracleClient">
+      <Name>System.Data.OracleClient</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="de\pta\Component\DbAccess\Cryptography\CryptoUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="de\pta\Component\DbAccess\Enumerations\DbAccessConfigType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="de\pta\Component\DbAccess\Enumerations\DbAccessProviderType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="de\pta\Component\DbAccess\Exceptions\ConfigNotFoundException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="de\pta\Component\DbAccess\Exceptions\DbAccessConfigurationException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="de\pta\Component\DbAccess\Exceptions\DbAccessException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="de\pta\Component\DbAccess\Exceptions\InvalidConfigFactoryException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="de\pta\Component\DbAccess\Exceptions\ProviderException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="de\pta\Component\DbAccess\Internal\Configuration\BaseConfiguration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="de\pta\Component\DbAccess\Internal\Configuration\CommandConfiguration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="de\pta\Component\DbAccess\Internal\Configuration\ConfigFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="de\pta\Component\DbAccess\Internal\Configuration\DataAdapterConfiguration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="de\pta\Component\DbAccess\Internal\Configuration\DbAccessConfiguration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="de\pta\Component\DbAccess\Internal\Configuration\DbParameter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="de\pta\Component\DbAccess\Internal\Configuration\IConfigFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="de\pta\Component\DbAccess\Internal\Configuration\XML\XmlConfigFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="de\pta\Component\DbAccess\Internal\Configuration\XML\XmlConfigProcessor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="de\pta\Component\DbAccess\Internal\DataProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="de\pta\Component\DbAccess\Internal\OleDbProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="de\pta\Component\DbAccess\Internal\OracleProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="de\pta\Component\DbAccess\Internal\SqlProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="de\pta\Component\DbAccess\IProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="de\pta\Component\DbAccess\ProviderFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ErrorHandling\ErrorHandling.csproj">
+      <Project>{1BC2C67D-06A8-4AB1-A715-9E3D099647DE}</Project>
+      <Name>ErrorHandling</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Log4NetWrapper\Log4NetWrapper.csproj">
+      <Project>{A57809D8-224D-4693-B064-7A06F64C0ECE}</Project>
+      <Name>Log4NetWrapper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

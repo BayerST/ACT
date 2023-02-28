@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE dotfuscator SYSTEM "http://www.preemptive.com/dotfuscator/dtd/dotfuscator_v1.2.dtd">
+<dotfuscator version="1.2">
+  <!--This is application generated code. Do not edit manually.-->
+  <trigger>
+    <filelist>
+      <file dir="C:\Projekte\Bayer\CropScience\ACLValueTool\ACT\bin\Release\" name="ACT.exe" />
+      <file dir="C:\Projekte\Bayer\CropScience\ACLValueTool\ACT\bin\Release\" name="BKSimpleMailCSharp.dll" />
+      <file dir="C:\Projekte\Bayer\CropScience\ACLValueTool\ACT\bin\Release\" name="Common.dll" />
+      <file dir="C:\Projekte\Bayer\CropScience\ACLValueTool\ACT\bin\Release\" name="DbAccess.dll" />
+      <file dir="C:\Projekte\Bayer\CropScience\ACLValueTool\ACT\bin\Release\" name="ErrorHandling.dll" />
+      <file dir="C:\Projekte\Bayer\CropScience\ACLValueTool\ACT\bin\Release\" name="IntelliComboBox.dll" />
+      <file dir="C:\Projekte\Bayer\CropScience\ACLValueTool\ACT\bin\Release\" name="ListOfValues.dll" />
+      <file dir="C:\Projekte\Bayer\CropScience\ACLValueTool\ACT\bin\Release\" name="log4net.dll" />
+      <file dir="C:\Projekte\Bayer\CropScience\ACLValueTool\ACT\bin\Release\" name="Log4NetWrapper.dll" />
+      <file dir="C:\Projekte\Bayer\CropScience\ACLValueTool\ACT\bin\Release\" name="TreeMenu.dll" />
+    </filelist>
+  </trigger>
+  <output>
+    <file dir="C:\Projekte\Bayer\CropScience\ACLValueTool\ACT\bin\Release\" />
+  </output>
+  <tempdir>
+    <file dir="C:\TEMP\" />
+  </tempdir>
+</dotfuscator>

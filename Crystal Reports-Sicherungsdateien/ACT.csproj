@@ -1,0 +1,1281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D53CC59A-BB70-4E34-96A9-E517511038AA}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>resources\Bayer.ico</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>ACT</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace />
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>BayerCropScience.ACT.AppStartup</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>act.xml</DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BKSimpleMailCSharp">
+      <Name>BKSimpleMailCSharp</Name>
+      <HintPath>..\Assemblies\BKSimpleMailCSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Common">
+      <Name>Common</Name>
+      <HintPath>..\Assemblies\Common.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine">
+      <Name>CrystalDecisions.CrystalReports.Engine</Name>
+      <HintPath>..\..\..\..\..\Programme\Gemeinsame Dateien\Crystal Decisions\2.0\managed\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\crystal.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource">
+      <Name>CrystalDecisions.ReportSource</Name>
+      <HintPath>..\..\..\..\..\Programme\Gemeinsame Dateien\Crystal Decisions\2.0\managed\CrystalDecisions.ReportSource.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\crystal.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared">
+      <Name>CrystalDecisions.Shared</Name>
+      <HintPath>..\..\..\Programme\Gemeinsame Dateien\Crystal Decisions\2.0\managed\CrystalDecisions.Shared.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\crystal.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms">
+      <Name>CrystalDecisions.Windows.Forms</Name>
+      <HintPath>..\..\..\..\..\Programme\Gemeinsame Dateien\Crystal Decisions\2.0\managed\CrystalDecisions.Windows.Forms.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\crystal.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DbAccess">
+      <Name>DbAccess</Name>
+      <HintPath>..\Assemblies\DbAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="ErrorHandling">
+      <Name>ErrorHandling</Name>
+      <HintPath>..\Assemblies\ErrorHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="IntelliComboBox">
+      <Name>IntelliComboBox</Name>
+      <HintPath>..\Assemblies\IntelliComboBox.dll</HintPath>
+    </Reference>
+    <Reference Include="ldap_net">
+      <Name>ldap_net</Name>
+      <HintPath>..\Assemblies\ldap_net.dll</HintPath>
+    </Reference>
+    <Reference Include="ListOfValues">
+      <Name>ListOfValues</Name>
+      <HintPath>..\Assemblies\ListOfValues.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <Name>log4net</Name>
+      <HintPath>..\Assemblies\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Log4NetWrapper">
+      <Name>Log4NetWrapper</Name>
+      <HintPath>..\Assemblies\Log4NetWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.OracleClient">
+      <Name>System.Data.OracleClient</Name>
+    </Reference>
+    <Reference Include="System.DirectoryServices">
+      <Name>System.DirectoryServices</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Name>System.EnterpriseServices</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="TreeMenu">
+      <Name>TreeMenu</Name>
+      <HintPath>..\Assemblies\TreeMenu.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ACL\BusinessObjects\AclChangesBO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ACL\BusinessObjects\AclSearchBO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ACL\BusinessObjects\AclStatisticsBO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ACL\BusinessObjects\AclValueLogger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ACL\BusinessObjects\ApproveAclByAiBO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ACL\BusinessObjects\ApproveAclByFormBO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ACL\BusinessObjects\CalculateAclBO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ACL\BusinessObjects\NotificationAclValuesBO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ACL\BusinessObjects\UpdateBiologyMessageBO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ACL\Controller\AclChangesController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ACL\Controller\AclSearchController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ACL\Controller\AclStatisticsController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ACL\Controller\ApproveAclByAiController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ACL\Controller\ApproveAclByFormController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ACL\Controller\NotificationAclValuesController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ACL\Controller\UpdateBiologyMessageController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ACL\FrmAclChanges.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ACL\FrmAclSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ACL\FrmAclStatistic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ACL\FrmApproveAclByAi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ACL\FrmApproveAclByAiMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ACL\FrmApproveAclByForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ACL\FrmApproveAclByFormMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ACL\FrmNotificationAclValues.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ACL\FrmUpdateBiologyMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ActiveIngredient\BusinessObjects\AiBO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ActiveIngredient\Controller\AiController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ActiveIngredient\Controller\AiSearchBO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ActiveIngredient\Controller\AiSearchController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ActiveIngredient\FrmAiAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ActiveIngredient\FrmAiAddPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ActiveIngredient\FrmAiBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ActiveIngredient\FrmAiModify.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ActiveIngredient\FrmAiReassign.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ActiveIngredient\FrmAiRename.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ActiveIngredient\FrmAiSearchAclValidation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ActiveIngredient\FrmAiSearchBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ActiveIngredient\FrmAiSearchDelete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ActiveIngredient\FrmAiSearchModify.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ActiveIngredient\FrmAiSearchSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ActiveIngredient\FrmAiShowPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Administration\BusinessObjects\UserBO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Administration\Controller\UserController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Administration\FrmChangePassword.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Administration\FrmSetPassword.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Administration\FrmUserModify.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Administration\FrmUserSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\AppStartup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\BusinessObjects\IBusinessObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\CodeTables\BusinessObjects\BcsDataImportBO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\CodeTables\BusinessObjects\CodeTablesBO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\CodeTables\CodeTableIDs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\CodeTables\Controller\CodeTablesController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\CodeTables\FrmCodeTables.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\DataSets\AclChangesDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AclChangesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\DataSets\AclSearchDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AclSearchDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\DataSets\AclStatisticsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AclStatisticsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\DataSets\ActiveIngredientDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ActiveIngredientDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\DataSets\ActiveIngredientRenameDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ActiveIngredientRenameDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\DataSets\ActiveIngredientSearchDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ActiveIngredientSearchDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\DataSets\ApproveAclByAiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApproveAclByAiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\DataSets\ApproveAclByFormDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApproveAclByFormDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\DataSets\CodetableAppTechDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CodetableAppTechDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\DataSets\CodetableAppTimingDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CodetableAppTimingDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\DataSets\CodetableBcsAiDataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CodetableBcsAiDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\DataSets\CodeTableBcsFormulationsDataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CodeTableBcsFormulationsDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\DataSets\CodetableCropsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CodetableCropsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\DataSets\CodetableCropUsesDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CodetableCropUsesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\DataSets\CodetableFlagsDataSet1.cs">
+      <DependentUpon>CodetableFlagsDataSet.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\DataSets\CodetableFormTypesDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CodetableFormTypesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\DataSets\CodetableIndicAreasDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CodetableIndicAreasDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\DataSets\CodetableSitesDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CodetableSitesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\DataSets\Dummy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\DataSets\FormulationDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FormulationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\DataSets\FormulationSearchDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FormulationSearchDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\DataSets\NotivAclDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NotivAclDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\DataSets\PlantDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlantDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\DataSets\PlantSearchDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlantSearchDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\DataSets\ReportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\DataSets\StatusPlantsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatusPlantsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\DataSets\UpdateBiologyMessagesDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateBiologyMessagesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\DataSets\UserDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\DataSets\UserSearchDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserSearchDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ErrorHandling\BaseUIPublisher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ErrorHandling\UIErrorPublisher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ErrorHandling\UIFatalPublisher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ErrorHandling\UIWaringPublisher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\ACL\AclErrorException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\ACL\AclFatalException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\ACL\AclLoggingException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\ActiveIngredient\AiErrorException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\ActiveIngredient\AiFatalException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\ActiveIngredient\AiWarningException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\Administration\AdminErrorException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\Administration\AdminFatalException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\Administration\AdminWarningException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\BaseACTException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\CodeTable\CtErrorException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\CodeTable\CtWarningException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\Configuration\ACTConfigurationException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\DataAccessException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\DataNotFoundException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\Formulation\FormulationErrorException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\Formulation\FormulationFatalException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\Formulation\FormulationWarningException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\InvalidDataException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\Ldap\LdapException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\Login\InvalidPasswordException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\Login\UserNotFoundException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\Mail\SMTPMailException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\OnlineHelp\OnlineHelpException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\Plant\PlantErrorException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\Plant\PlantFatalException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\Plant\PlantWarningException.cs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\Report\ReportErrorException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\Report\ReportFatalException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\Report\ReportWarningException.cs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Exceptions\Util\ActFormatException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Formulation\BusinessObjects\FormulationBO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Formulation\BusinessObjects\FormulationSearchBO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Formulation\Controller\FormulationController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Formulation\Controller\FormulationSearchController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Formulation\FrmFormulationAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Formulation\FrmFormulationBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Formulation\FrmFormulationComplete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Formulation\FrmFormulationDelete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Formulation\FrmFormulationDuplicate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Formulation\FrmFormulationModify.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Formulation\FrmFormulationSearchACLValidation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Formulation\FrmFormulationSearchBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Formulation\FrmFormulationSearchComplete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Formulation\FrmFormulationSearchDelete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Formulation\FrmFormulationSearchModify.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Formulation\FrmFormulationSearchSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Formulation\FrmFormulationShowPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\FrmACTMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Globals.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Ldap\LdapSearch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Login\Controller\LoginController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Login\FrmActFirstLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Login\FrmActLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Plant\BusinessObjects\PlantBO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Plant\BusinessObjects\PlantSearchBO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Plant\Controller\PlantController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Plant\Controller\PlantSearchController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Plant\FormulatationToAssign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Plant\FrmAddAIToPlant.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Plant\FrmAddFormToPlant.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Plant\FrmPlant.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Plant\FrmPlantAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Plant\FrmPlantDuplicate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Plant\FrmPlantModify.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Plant\FrmPlantSearchBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Plant\FrmPlantSearchDelete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Plant\FrmPlantSearchModify.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Plant\FrmPlantSearchSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Plant\ValueObjects\SelectedFormulationVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Report\BusinessObject\AclMatrixSpecificFormulationBO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Report\BusinessObject\AclMatrixSpecificPlantBO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Report\BusinessObject\AclValuesFormulationChangeBO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Report\BusinessObject\AuditingReportBO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Report\BusinessObject\StatusPlantsBO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Report\BusinessObject\UpdateBiologyMessageLogger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Report\Controller\AclMatrixSpecificFormulationController.cs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Report\Controller\AclMatrixSpecificPlantController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Report\Controller\AclValuesFormulationChangeController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Report\Controller\AuditingReportController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Report\Controller\StatusPlantsController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Report\FrmAclMatrixSpecificFormulation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Report\FrmAclMatrixSpecificPlant.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Report\FrmAclValuesFormulationChange.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Report\FrmAuditingReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Report\FrmPriorFormulation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Report\FrmSelectAI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Report\FrmSelectFormulatiuon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Report\FrmStatusPlants.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Report\FrmSubSequentForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Report\FrmViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Util\Format\DiplayFormats.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Util\Gui\DataGridNavigator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Util\Gui\ICancelableControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Util\Gui\ScrolledDataGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Util\Mail\SMTPMail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Util\OnlineHelp\FrmOnlineHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Util\Popup\FrmPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Util\Popup\FrmPopupResize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Util\Search\SearchStringValidator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Util\Utils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Util\Validation\DataGridValidator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Util\Validation\FormatValidator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\Util\Validation\TextBoxValidation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ValueObjects\AclChangesParamsVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ValueObjects\AclSearchParamsVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ValueObjects\ActiveIngredientVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ValueObjects\FormulationVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BayerCropScience\ACT\ValueObjects\PlantVO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="resources\StatusPlants.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="resources\Users.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Content Include="BayerCropScience\ACT\DataSets\AclChangesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AclChangesDataSet.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="BayerCropScience\ACT\DataSets\AclSearchDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AclSearchDataSet.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="BayerCropScience\ACT\DataSets\AclStatisticsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AclStatisticsDataSet.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="BayerCropScience\ACT\DataSets\ActiveIngredientDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ActiveIngredientDataSet.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="BayerCropScience\ACT\DataSets\ActiveIngredientRenameDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ActiveIngredientRenameDataSet.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="BayerCropScience\ACT\DataSets\ActiveIngredientSearchDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ActiveIngredientSearchDataSet.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="BayerCropScience\ACT\DataSets\ApproveAclByAiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ApproveAclByAiDataSet.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="BayerCropScience\ACT\DataSets\ApproveAclByFormDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ApproveAclByFormDataSet.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="BayerCropScience\ACT\DataSets\CodetableAppTechDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CodetableAppTechDataSet.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="BayerCropScience\ACT\DataSets\CodetableAppTimingDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CodetableAppTimingDataSet.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="BayerCropScience\ACT\DataSets\CodetableBcsAiDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CodetableBcsAiDataset.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="BayerCropScience\ACT\DataSets\CodeTableBcsFormulationsDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CodeTableBcsFormulationsDataset.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="BayerCropScience\ACT\DataSets\CodetableCropsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CodetableCropsDataSet.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="BayerCropScience\ACT\DataSets\CodetableCropUsesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CodetableCropUsesDataSet.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="BayerCropScience\ACT\DataSets\CodetableFlagsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CodetableFlagsDataSet1.cs</LastGenOutput>
+    </Content>
+    <Content Include="BayerCropScience\ACT\DataSets\CodetableFormTypesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CodetableFormTypesDataSet.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="BayerCropScience\ACT\DataSets\CodetableIndicAreasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CodetableIndicAreasDataSet.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="BayerCropScience\ACT\DataSets\CodetableSitesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CodetableSitesDataSet.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="BayerCropScience\ACT\DataSets\FormulationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FormulationDataSet.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="BayerCropScience\ACT\DataSets\FormulationSearchDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FormulationSearchDataSet.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="BayerCropScience\ACT\DataSets\NotivAclDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NotivAclDataSet.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="BayerCropScience\ACT\DataSets\PlantDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PlantDataSet.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="BayerCropScience\ACT\DataSets\PlantSearchDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PlantSearchDataSet.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="BayerCropScience\ACT\DataSets\ReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportDataSet.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="BayerCropScience\ACT\DataSets\StatusPlantsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StatusPlantsDataSet.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="BayerCropScience\ACT\DataSets\UpdateBiologyMessagesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdateBiologyMessagesDataSet.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="BayerCropScience\ACT\DataSets\UserDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UserDataSet.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="BayerCropScience\ACT\DataSets\UserSearchDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UserSearchDataSet.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="configuration\Configuration.xml" />
+    <Content Include="configuration\log4net.xml" />
+    <Content Include="resources\Bayer.ico" />
+    <Content Include="resources\Bayer.jpg" />
+    <Content Include="resources\bcs_logo.gif" />
+    <Content Include="resources\data.html" />
+    <Content Include="resources\dummy.gif" />
+    <Content Include="resources\excel.css" />
+    <Content Include="resources\kornfeld.jpg" />
+    <Content Include="resources\Logo.jpg" />
+    <Content Include="resources\Template.xslt" />
+    <Content Include="resources\test.html" />
+    <EmbeddedResource Include="BayerCropScience\ACT\ACL\FrmAclChanges.resx">
+      <DependentUpon>FrmAclChanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\ACL\FrmAclSearch.resx">
+      <DependentUpon>FrmAclSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\ACL\FrmAclStatistic.resx">
+      <DependentUpon>FrmAclStatistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\ACL\FrmApproveAclByAi.resx">
+      <DependentUpon>FrmApproveAclByAi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\ACL\FrmApproveAclByAiMessage.resx">
+      <DependentUpon>FrmApproveAclByAiMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\ACL\FrmApproveAclByForm.resx">
+      <DependentUpon>FrmApproveAclByForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\ACL\FrmApproveAclByFormMessage.resx">
+      <DependentUpon>FrmApproveAclByFormMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\ACL\FrmNotificationAclValues.resx">
+      <DependentUpon>FrmNotificationAclValues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\ACL\FrmUpdateBiologyMessage.resx">
+      <DependentUpon>FrmUpdateBiologyMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\ActiveIngredient\FrmAiAdd.resx">
+      <DependentUpon>FrmAiAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\ActiveIngredient\FrmAiAddPopup.resx">
+      <DependentUpon>FrmAiAddPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\ActiveIngredient\FrmAiBase.resx">
+      <DependentUpon>FrmAiBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\ActiveIngredient\FrmAiModify.resx">
+      <DependentUpon>FrmAiModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\ActiveIngredient\FrmAiReassign.resx">
+      <DependentUpon>FrmAiReassign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\ActiveIngredient\FrmAiRename.resx">
+      <DependentUpon>FrmAiRename.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\ActiveIngredient\FrmAiSearchAclValidation.resx">
+      <DependentUpon>FrmAiSearchAclValidation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\ActiveIngredient\FrmAiSearchBase.resx">
+      <DependentUpon>FrmAiSearchBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\ActiveIngredient\FrmAiSearchDelete.resx">
+      <DependentUpon>FrmAiSearchDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\ActiveIngredient\FrmAiSearchModify.resx">
+      <DependentUpon>FrmAiSearchModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\ActiveIngredient\FrmAiSearchSelect.resx">
+      <DependentUpon>FrmAiSearchSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\ActiveIngredient\FrmAiShowPopup.resx">
+      <DependentUpon>FrmAiShowPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Administration\FrmChangePassword.resx">
+      <DependentUpon>FrmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Administration\FrmSetPassword.resx">
+      <DependentUpon>FrmSetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Administration\FrmUserModify.resx">
+      <DependentUpon>FrmUserModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Administration\FrmUserSearch.resx">
+      <DependentUpon>FrmUserSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\CodeTables\FrmCodeTables.resx">
+      <DependentUpon>FrmCodeTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\DataSets\Dummy.resx">
+      <DependentUpon>Dummy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Formulation\FrmFormulationAdd.resx">
+      <DependentUpon>FrmFormulationAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Formulation\FrmFormulationBase.resx">
+      <DependentUpon>FrmFormulationBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Formulation\FrmFormulationComplete.resx">
+      <DependentUpon>FrmFormulationComplete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Formulation\FrmFormulationDelete.resx">
+      <DependentUpon>FrmFormulationDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Formulation\FrmFormulationDuplicate.resx">
+      <DependentUpon>FrmFormulationDuplicate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Formulation\FrmFormulationModify.resx">
+      <DependentUpon>FrmFormulationModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Formulation\FrmFormulationSearchACLValidation.resx">
+      <DependentUpon>FrmFormulationSearchACLValidation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Formulation\FrmFormulationSearchBase.resx">
+      <DependentUpon>FrmFormulationSearchBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Formulation\FrmFormulationSearchComplete.resx">
+      <DependentUpon>FrmFormulationSearchComplete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Formulation\FrmFormulationSearchDelete.resx">
+      <DependentUpon>FrmFormulationSearchDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Formulation\FrmFormulationSearchModify.resx">
+      <DependentUpon>FrmFormulationSearchModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Formulation\FrmFormulationSearchSelect.resx">
+      <DependentUpon>FrmFormulationSearchSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Formulation\FrmFormulationShowPopup.resx">
+      <DependentUpon>FrmFormulationShowPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\FrmACTMain.resx">
+      <DependentUpon>FrmACTMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\FrmSplash.resx">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Login\FrmActFirstLogin.resx">
+      <DependentUpon>FrmActFirstLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Login\FrmActLogin.resx">
+      <DependentUpon>FrmActLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Plant\FormulatationToAssign.resx">
+      <DependentUpon>FormulatationToAssign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Plant\FrmAddAIToPlant.resx">
+      <DependentUpon>FrmAddAIToPlant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Plant\FrmAddFormToPlant.resx">
+      <DependentUpon>FrmAddFormToPlant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Plant\FrmPlant.resx">
+      <DependentUpon>FrmPlant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Plant\FrmPlantAdd.resx">
+      <DependentUpon>FrmPlantAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Plant\FrmPlantDuplicate.resx">
+      <DependentUpon>FrmPlantDuplicate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Plant\FrmPlantModify.resx">
+      <DependentUpon>FrmPlantModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Plant\FrmPlantSearchBase.resx">
+      <DependentUpon>FrmPlantSearchBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Plant\FrmPlantSearchDelete.resx">
+      <DependentUpon>FrmPlantSearchDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Plant\FrmPlantSearchModify.resx">
+      <DependentUpon>FrmPlantSearchModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Plant\FrmPlantSearchSelect.resx">
+      <DependentUpon>FrmPlantSearchSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Report\FrmAclMatrixSpecificFormulation.resx">
+      <DependentUpon>FrmAclMatrixSpecificFormulation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Report\FrmAclMatrixSpecificPlant.resx">
+      <DependentUpon>FrmAclMatrixSpecificPlant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Report\FrmAclValuesFormulationChange.resx">
+      <DependentUpon>FrmAclValuesFormulationChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Report\FrmAuditingReport.resx">
+      <DependentUpon>FrmAuditingReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Report\FrmPriorFormulation.resx">
+      <DependentUpon>FrmPriorFormulation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Report\FrmSelectAI.resx">
+      <DependentUpon>FrmSelectAI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Report\FrmSelectFormulatiuon.resx">
+      <DependentUpon>FrmSelectFormulatiuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Report\FrmStatusPlants.resx">
+      <DependentUpon>FrmStatusPlants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Report\FrmSubSequentForm.resx">
+      <DependentUpon>FrmSubSequentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Report\FrmViewer.resx">
+      <DependentUpon>FrmViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Util\Gui\ScrolledDataGrid.resx">
+      <DependentUpon>ScrolledDataGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Util\OnlineHelp\FrmOnlineHelp.resx">
+      <DependentUpon>FrmOnlineHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Util\Popup\FrmPopup.resx">
+      <DependentUpon>FrmPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BayerCropScience\ACT\Util\Popup\FrmPopupResize.resx">
+      <DependentUpon>FrmPopupResize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorMessages.en-US.resx" />
+    <EmbeddedResource Include="ErrorMessages.resx" />
+    <EmbeddedResource Include="resources\AclAuditing.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resources\AclChanges.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resources\AclChangesExcel.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resources\AclMatrixFormulation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resources\AclMatrixFormulationChange.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resources\ACLMatrixForPlant.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resources\ACLMatrixForPlantExcel.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resources\ACLMatrixForSite.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resources\AclSearch.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resources\AclSearchExcel.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resources\StatusPlants.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resources\Users.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <Folder Include="BayerCropScience\ACT\Util\Popup\OnlineHelp" />
+    <None Include="app.config" />
+    <None Include="BayerCropScience\ACT\DataSets\AclChangesDataSet.xsx">
+      <DependentUpon>AclChangesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BayerCropScience\ACT\DataSets\AclSearchDataSet.xsx">
+      <DependentUpon>AclSearchDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BayerCropScience\ACT\DataSets\AclStatisticsDataSet.xsx">
+      <DependentUpon>AclStatisticsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BayerCropScience\ACT\DataSets\ActiveIngredientDataSet.xsx">
+      <DependentUpon>ActiveIngredientDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BayerCropScience\ACT\DataSets\ActiveIngredientRenameDataSet.xsx">
+      <DependentUpon>ActiveIngredientRenameDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BayerCropScience\ACT\DataSets\ActiveIngredientSearchDataSet.xsx">
+      <DependentUpon>ActiveIngredientSearchDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BayerCropScience\ACT\DataSets\ApproveAclByAiDataSet.xsx">
+      <DependentUpon>ApproveAclByAiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BayerCropScience\ACT\DataSets\ApproveAclByFormDataSet.xsx">
+      <DependentUpon>ApproveAclByFormDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BayerCropScience\ACT\DataSets\CodetableAppTimingDataSet.xsx">
+      <DependentUpon>CodetableAppTimingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BayerCropScience\ACT\DataSets\CodetableBcsAiDataset.xsx">
+      <DependentUpon>CodetableBcsAiDataset.xsd</DependentUpon>
+    </None>
+    <None Include="BayerCropScience\ACT\DataSets\CodeTableBcsFormulationsDataset.xsx">
+      <DependentUpon>CodeTableBcsFormulationsDataset.xsd</DependentUpon>
+    </None>
+    <None Include="BayerCropScience\ACT\DataSets\CodetableFlagsDataSet.xsx">
+      <DependentUpon>CodetableFlagsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BayerCropScience\ACT\DataSets\CodetableSitesDataSet.xsx">
+      <DependentUpon>CodetableSitesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BayerCropScience\ACT\DataSets\FormulationDataSet.xsx">
+      <DependentUpon>FormulationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BayerCropScience\ACT\DataSets\FormulationSearchDataSet.xsx">
+      <DependentUpon>FormulationSearchDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BayerCropScience\ACT\DataSets\NotivAclDataSet.xsx">
+      <DependentUpon>NotivAclDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BayerCropScience\ACT\DataSets\PlantDataSet.xsx">
+      <DependentUpon>PlantDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BayerCropScience\ACT\DataSets\PlantSearchDataSet.xsx">
+      <DependentUpon>PlantSearchDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BayerCropScience\ACT\DataSets\ReportDataSet.xsx">
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BayerCropScience\ACT\DataSets\StatusPlantsDataSet.xsx">
+      <DependentUpon>StatusPlantsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BayerCropScience\ACT\DataSets\UpdateBiologyMessagesDataSet.xsx">
+      <DependentUpon>UpdateBiologyMessagesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BayerCropScience\ACT\DataSets\UserDataSet.xsx">
+      <DependentUpon>UserDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BayerCropScience\ACT\DataSets\UserSearchDataSet.xsx">
+      <DependentUpon>UserSearchDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="resources\ACT-OnlineHelpCompleteFormulation.pdf" />
+    <None Include="resources\ACT-OnlineHelpRetrievalUser.pdf" />
+    <None Include="resources\ACT-OnlineHelpUpdateBiology.pdf" />
+    <None Include="resources\ACT-OnlineHelpUpdateProduction.pdf" />
+    <None Include="resources\test.pdf" />
+    <None Include="resources\test.xls" />
+    <None Include="resources\xmlpdf.lic" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>
